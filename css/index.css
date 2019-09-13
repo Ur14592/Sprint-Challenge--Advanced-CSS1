@@ -319,6 +319,10 @@ footer {
     margin-top: 10%;
   }
 }
+.home .walk .btn:hover {
+  color: black;
+  background-color: white;
+}
 .home .walk-img {
   width: 46%;
   margin-left: 4%;
