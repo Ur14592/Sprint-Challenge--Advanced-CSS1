@@ -2,9 +2,27 @@
 @media @phone {
     width: 90%;
   }******/
+/*.custom-btn(@bgcolor, @width, @font-color){
+    display: block;
+    background-color: @bgcolor;
+    margin: 0 0 20px;
+    cursor: pointer;
+    width: @width;
+    height: 40px;
+    font-size: 2rem;
+    border-radius: 10px;
+    color:@font-color;
+}
+*/
 .bordered {
   font-size: 3.5rem;
 }
+.hundWidth {
+  width: 100%;
+}
+/*****
+.hunWidth();
+****/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -135,6 +153,7 @@ table {
 }
 * {
   box-sizing: border-box;
+  max-width: 100%;
 }
 html {
   font-size: 62.5%;
@@ -143,6 +162,12 @@ html,
 body {
   font-family: 'Ubuntu', sans-serif;
   color: #5E6164;
+}
+@media (max-width:500px) {
+  html,
+  body {
+    width: 490px;
+  }
 }
 h1,
 h2,
@@ -170,7 +195,7 @@ p {
 header h1 {
   color: black;
   font-size: 3.5rem;
-  padding: 2% 0 5px 28%;
+  padding: 2% 0 5px 35%;
 }
 @media (max-width:500px) {
   header h1 {
@@ -179,8 +204,7 @@ header h1 {
 }
 header nav {
   margin-top: 10px;
-  width: 500px;
-  padding: 0 0% 2% 25%;
+  padding: 0% 26% 1%;
   justify-content: space-between;
   display: flex;
 }
@@ -199,7 +223,6 @@ header #headerBox {
   background-color: #f6f6f6;
 }
 header img {
-  width: 705px;
   height: auto;
 }
 @media (max-width:500px) {
@@ -290,50 +313,45 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .btn {
+.home .walk .btn button {
   display: block;
   background-color: #22283a;
-  margin: 0 0 20px;
+  margin: 0 10px 20px;
   cursor: pointer;
   width: 100px;
-  height: 40px;
+  height: 45px;
   font-size: 2rem;
   border-radius: 10px;
   color: white;
-  text-align: center;
-  padding-top: 9px;
 }
 @media (max-width:500px) {
-  .home .walk .btn {
+  .home .walk .btn button {
     display: block;
     background-color: #22283a;
-    margin-left: 10px;
+    margin: 0 10px 20px;
     cursor: pointer;
     width: 450px;
-    height: 55px;
+    height: 45px;
     font-size: 2rem;
     border-radius: 10px;
     color: white;
   }
-  .home .walk .btn a {
-    margin-top: 10%;
-  }
 }
-.home .walk .btn:hover {
+.home .walk .btn button:hover {
   color: black;
   background-color: white;
 }
-.home .walk-img {
+.home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
 }
 @media (max-width:500px) {
-  .home .walk-img {
-    width: 100%;
-    margin: 20px 2.5%;
+  .home .walk .walk-img {
+    width: 95%;
+    margin: 10px 10px 10px 20px;
   }
 }
-.home .walk-img img {
+.home .walk .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
